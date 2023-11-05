@@ -1,0 +1,463 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+.intro {
+    background-color:hsl(217, 28%, 15%) ;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+} 
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+main {
+    background-color:hsl(218, 28%, 13%) ;
+    color: hsl(0, 0%, 100%);
+}
+/* Start Intro */
+header {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    width: 130px;
+}
+header ul {
+    display: flex;
+    gap: 1rem;
+}
+header ul a {
+    color: hsl(0, 0%, 100%);
+}
+header ul a:hover {
+    border-bottom: 2px solid white;
+    font-weight: 700;
+}
+.landing .container {
+    padding: 40px 40px 0;
+    position: relative;
+}
+.landing picture {
+    width: 100%;
+    position: relative;
+    bottom: -5px;
+}
+.landing picture img {
+    width: 100%;
+}
+.landing section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 54px;
+    position: absolute;
+    bottom: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    z-index: 2;
+}
+.landing h1 {
+    font-size: 22px;
+    margin-top: 2rem;
+}
+.landing p {
+    line-height: 1.6;
+    margin: 20px 0 32px;
+}
+.landing button {
+    width: 270px;
+    height: 50px;
+    border-radius: 30px;
+    color:hsl(0, 0%, 100%);
+    border: none;
+    background-image: linear-gradient(to right ,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    font-size: 14px;
+    display: grid;
+    place-content: center;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    transition: background-color 2s linear;
+    box-shadow: 8px 10px 13px rgba(0, 0, 0, 0.4);
+}
+.landing button:hover {
+    background-image: none;
+    background-color: hsl(198, 40%, 50%) ;
+}
+@media (min-width:768px) {
+    header {
+        padding: 2rem 3rem;
+    }
+    header ul {
+        gap: 50px;
+    }
+    .landing .container {
+        display: grid;
+        place-content: center;
+        padding: 40px;
+    }
+    .landing section  {
+        width: 630px;
+        padding: 0 40px;
+        bottom: -295px;
+    }
+    .landing section h1 {
+        font-size: 32px;
+        line-height: 1.5;
+    }
+    .landing section p {
+        max-width: 470px;
+        line-height: 1.8;
+        font-size: 16px;
+    }
+    .landing button {
+        width: 220px;
+    }
+    .landing picture {
+        margin-top: 30px;
+        display: block;
+    }
+}
+/* End Intro */
+/* Start Features */
+.features {
+    padding-top: 250px;
+}
+.features .feat {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem ;
+    margin-bottom: 50px;
+} 
+.features .feat img {
+    width: 50px;
+}
+.features .feat h3 {
+    margin: 2rem 0 1rem;
+}
+.features .feat p {
+    line-height: 1.3;
+    max-width: 400px;
+}
+@media (min-width:768px) {
+    .features {
+        width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin: 0 auto;
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .features .feat:first-child ,.features .feat:last-child{
+        width: 410px;
+    }
+    .features .feat p {
+        max-width: 400px;
+    }
+    .features .feat:nth-child(2) , .features .feat:nth-child(3){
+        width: 450px;
+    }
+}
+@media (min-width:992px) {
+    .features {
+        flex-direction: row;
+        padding-top: 0;
+    }
+}
+/* End Features */
+/* Start Productive */
+.productive {
+    padding-bottom:5rem ;
+}
+.productive figure {
+    padding: 2rem;
+}
+.productive section {
+    padding: 25px;
+}
+.productive section h2 {
+    font-size: 18px;
+}
+.productive section p{
+    margin: 1rem 0;
+}
+.productive section a {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 8px;
+    color: hsl(176, 68%, 64%);
+    border-bottom: 2px solid hsl(176, 68%, 64%);
+}
+.productive section a:hover  {
+    color:hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 100%);
+    filter: brightness(250%);
+}
+@media (min-width:768px) {
+    .productive {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .productive figure {
+        width: 530px;
+        padding-right: 5px;
+    }
+    .productive section {
+        width: 530px;
+    }
+    .productive section h2 {
+        font-size: 35px;
+        max-width: 290px;
+    }
+}
+@media (min-width:992px) {
+    .productive {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+/* End Productive */
+/* Start Testimonials */
+.testimonials {
+    margin-bottom: 300px;
+}
+.testimonials .card{
+    background-color: hsl(219, 30%, 18%);
+    width: 300px;
+    padding: 16px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+}
+.testimonials .card:first-child {
+    position: relative;
+}
+.testimonials .card > img {
+    width: 25px;
+    position: absolute;
+    left: 4px;
+    top: -20px;
+}
+.testimonials .card p {
+    margin: 20px 0;
+    font-size: 12px;
+}
+.testimonials .card figure{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.testimonials .card figure img{
+    width: 30px;
+    border-radius: 50%;
+}
+.testimonials .card figcaption span{
+    font-size: 10px;
+    color:hsl(0, 0%, 70%)
+}
+@media (min-width:768px) {
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .testimonials .card {
+        margin: 0;
+    }
+}
+@media (min-width:992px) {
+    .testimonials {
+        flex-direction: row;
+    }
+}
+/* End Testimonials */
+/* Start Footer */
+footer {
+    position: relative;
+    padding: 250px 20px 50px;
+    background-color: hsl(216, 53%, 9%);
+}
+footer .sing-in {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -170px;
+    background-color: hsl(217, 28%, 15%);
+    width: 340px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+footer .sing-in h2 {
+    margin-top: 10px;
+}
+footer .sing-in p {
+    margin: 1rem 0;
+}
+footer .sing-in input ,footer .sing-in button{
+    width: 100%;
+    height: 46px;
+    border: none;
+    border-radius: 2rem;
+    margin: 14px 0;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+}
+footer .sing-in input {
+    padding-left: 40px;
+}
+footer .sing-in button {
+    background-image: linear-gradient(to right,hsl(176, 68%, 64%),hsl(198, 60%, 50%) );
+    font-size: 14px;
+    font-weight: 700;
+    transition: "background" 3s ease-in-out;
+    
+}
+footer .sing-in form {
+    position: relative;
+}
+.error {
+    position: absolute;
+    text-align: left;
+    left: 10px;
+    bottom: -5px;
+    color:hsl(0, 100%, 63%);
+    font-size: 12px;
+    display: none;
+}
+footer .sing-in button:hover {
+    background-image: none;
+    background-color: hsl(198, 40%, 50%) ;
+}
+footer .sing-in button:focus .error {
+    display: block;
+}
+footer > figure img  {
+    margin: 2rem 1rem 0.5rem;
+    width: 130px;
+}
+footer ul:not(:last-child) li {
+    font-family: 'Open Sans', sans-serif;
+    padding: 1rem 0;
+}
+footer ul:first-child li {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    gap:1rem;
+    padding: 1rem 0;
+    max-width: 280px;
+    cursor: pointer;
+    line-height: 1.6;
+}
+footer ul li a {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+footer ul:nth-child(2) li {
+    display: flex;
+    gap: 1rem;
+}
+footer ul:nth-child(2),footer ul:nth-child(4) {
+    margin-bottom: 60px;
+}
+footer ul:nth-child(3),footer ul:last-child {
+    margin-bottom: 40px;
+}
+footer ul:last-child {
+    display: flex;
+    gap: 20px;
+}
+footer ul:last-child  i {
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+footer ul:last-child li:hover i  {
+    color:hsl(176, 68%, 64%);
+    border-color:hsl(176, 68%, 64%) ;
+}
+footer ul:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+@media (min-width:768px) {
+    footer .sing-in {
+        width: 80%;
+    }
+    footer ul:first-child li {
+        max-width: 340px;
+    }
+}
+@media (min-width:992px) {
+    footer {
+        padding-top: 100px;
+    }
+    footer .footer-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer ul:last-child  {
+    padding-top:16px ;
+    }
+    footer .sing-in {
+        width: 70%;
+    }
+    footer .sing-in h2 {
+        font-size: 2rem;
+    }
+    footer .sing-in p {
+        margin: 1rem auto;
+        max-width: 605px;
+    }
+    footer .sing-in form {
+        display: inline-block;
+        width: 500px;
+        margin-right: 20px;
+    }
+    footer .sing-in button {
+        width: 200px;
+        display: inline-block;
+    }
+    footer ul:last-child {
+        align-items: flex-start;
+    }
+}
+/* End Footer */
